@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import { Table, Button, Modal, Form, Input, Select } from 'antd';
+import React from 'react';
+import { Table } from 'antd';
 
 const List: React.FC = () => {
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const data = [
         { key: '1', id: "1", name: 'Bùi Quang Công', age: "20", major: "Lập trình web-FE" },
@@ -30,34 +28,8 @@ const List: React.FC = () => {
         <div>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 16 }}>
                 <strong style={{ fontSize: '18px' }}>Danh sách người dùng</strong>
-                <Button type="primary" onClick={() => setIsModalOpen(true)}>
-                    Thêm User
-                </Button>
             </div>
-
             <Table dataSource={data} columns={columns} pagination={{ pageSize: 5 }} />
-
-            <Modal
-                title="Thêm người dùng"
-                open={isModalOpen}
-                onOk={() => setIsModalOpen(false)}
-                onCancel={() => setIsModalOpen(false)}
-            >
-                <Form layout="vertical">
-                    <Form.Item label="Tên" name="name">
-                        <Input placeholder="Nhập tên..." />
-                    </Form.Item>
-                    <Form.Item label="Email" name="email">
-                        <Input placeholder="Nhập email..." />
-                    </Form.Item>
-                    <Form.Item label="Vai trò" name="role">
-                        <Select placeholder="Chọn vai trò">
-                            <Select.Option value="Admin">Admin</Select.Option>
-                            <Select.Option value="User">User</Select.Option>
-                        </Select>
-                    </Form.Item>
-                </Form>
-            </Modal>
         </div>
     );
 };
