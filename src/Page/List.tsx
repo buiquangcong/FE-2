@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table } from 'antd';
+import { Table, Button, Space } from 'antd';
 
 const List: React.FC = () => {
 
@@ -21,7 +21,16 @@ const List: React.FC = () => {
         { title: 'Họ tên', dataIndex: 'name', key: 'name' },
         { title: 'Tuổi', dataIndex: 'age', key: 'age' },
         { title: 'Chuyên Ngành', dataIndex: 'major', key: 'major' },
-
+        {
+            title: 'Hành động',
+            key: 'action',
+            render: () => (
+                <Space>
+                    <Button type="primary">Sửa</Button>
+                    <Button type="primary" danger>Xóa</Button>
+                </Space>
+            ),
+        },
     ];
 
     return (
