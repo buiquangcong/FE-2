@@ -13,7 +13,6 @@ const Dashboard = () => {
                 </Title>
             </Header>
 
-            {/* Content để trống - Nơi sẽ chứa nội dung sau này */}
             <Content style={{ padding: '20px 50px' }}>
                 <div style={{
                     background: '#fff',
@@ -23,7 +22,6 @@ const Dashboard = () => {
                     border: '1px dashed #ccc',
                     textAlign: 'center'
                 }}>
-                    {/* Hiện tại không hiển thị thông tin sinh viên */}
                     Nội dung Content sẽ hiển thị ở đây
                 </div>
             </Content>
