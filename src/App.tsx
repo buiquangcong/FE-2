@@ -4,6 +4,7 @@ import Login from "./Page/Login";
 import Register from "./Page/Register";
 import { Link } from "react-router-dom";
 import Dashboard from "./Page/Dashboard";
+import List from "./Page/List";
 function App() {
   return (
     <>
@@ -44,6 +45,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" />} />
+          <Route path="/list" element={<List />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
