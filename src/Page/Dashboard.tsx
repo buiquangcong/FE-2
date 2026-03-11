@@ -26,7 +26,6 @@ const Dashboard = () => {
                 </div>
             </Content>
 
-            {/* Footer cơ bản */}
             <Footer style={{ textAlign: 'center' }}>
                 Footer ©2026 Created by Bui Quang Cong
             </Footer>
