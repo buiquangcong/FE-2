@@ -7,7 +7,7 @@ const { Title } = Typography;
 type FieldType = {
     username?: string;
     password?: string;
-    remember?: boolean; // Sửa lại thành boolean cho đúng logic Checkbox
+    remember?: boolean;
 };
 
 const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
@@ -33,7 +33,7 @@ const Login: React.FC = () => (
 
             <Form
                 name="basic"
-                layout="vertical" // Chuyển sang dọc để trông hiện đại hơn
+                layout="vertical"
                 initialValues={{ remember: true }}
                 onFinish={onFinish}
                 onFinishFailed={onFinishFailed}
