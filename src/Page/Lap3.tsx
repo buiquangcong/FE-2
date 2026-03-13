@@ -33,7 +33,7 @@ const Lap3: React.FC = () => (
                         if (!value || getFieldValue('password') === value) {
                             return Promise.resolve();
                         }
-                        return Promise.reject(new Error('Hai mật khẩu không khớp nhau!'));
+                        return Promise.reject(new Error('hai mat khau khong khop!'));
                     },
                 }),
             ]}
@@ -58,25 +58,25 @@ const Lap3: React.FC = () => (
     <hr />
     <h1 className='text-center'>Bai 4</h1>
     <Form layout="vertical">
-        <Form.Item label="Title" name="title" rules={[{ required: true, message: 'Vui lòng nhập tiêu đề!' }]}>
-            <Input placeholder="Nhập tiêu đề bài viết" />
+        <Form.Item label="Title" name="title" rules={[{ required: true, message: 'vui long nhap tieu de' }]}>
+            <Input placeholder="nhap tieu de" />
         </Form.Item>
 
         <Form.Item label="Slug" name="slug">
-            <Input placeholder="nhap-duong-dan-bai-viet" />
+            <Input placeholder="nhap duong dan bai viet" />
         </Form.Item>
 
         <Form.Item label="Content" name="content">
-            <Input.TextArea rows={4} placeholder="Nhập nội dung bài viết" />
+            <Input.TextArea rows={4} placeholder="nhap noi dung" />
         </Form.Item>
 
         <Form.Item label="Image URL" name="image">
-            <Input placeholder="https://example.com/image.jpg" />
+            <Input placeholder="nhap url anh" />
         </Form.Item>
 
         <Form.Item>
             <Button type="primary" htmlType="submit" block>
-                Add Post
+                them
             </Button>
         </Form.Item>
     </Form>
