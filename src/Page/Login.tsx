@@ -23,7 +23,7 @@ const Login: React.FC = () => (
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: '80vh' // Căn giữa theo chiều dọc
+        minHeight: '80vh'
     }}>
         <Card style={{ width: 450, boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}>
             <div style={{ textAlign: 'center', marginBottom: 24 }}>
@@ -50,7 +50,9 @@ const Login: React.FC = () => (
                 <Form.Item<FieldType>
                     label="Mật khẩu"
                     name="password"
-                    rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' }]}
+                    rules={[{ required: true, message: 'Vui lòng nhập mật khẩu!' },{
+                        min:6,message:'Password phải có ít nhất 6 ký tự'
+                    }]}
                 >
                     <Input.Password placeholder="Password..." />
                 </Form.Item>

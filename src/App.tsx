@@ -5,6 +5,7 @@ import Register from "./Page/Register";
 import { Link } from "react-router-dom";
 import Dashboard from "./Page/Dashboard";
 import List from "./Page/List";
+import Lap3 from "./Page/Lap3";
 function App() {
   return (
     <>
@@ -23,6 +24,9 @@ function App() {
             </Link>
             <Link to="/add" className="hover:text-gray-200">
               Thêm mới
+            </Link>
+            <Link to="/form" className="hover:text-gray-200">
+              lap3
             </Link>
           </div>
 
@@ -49,6 +53,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/form" element={<Lap3 />} />
         </Routes>
       </div>
       <Toaster />
