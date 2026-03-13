@@ -27,7 +27,7 @@ const Lap3: React.FC = () => (
             name="confirmpassword"
             dependencies={['password']}
             rules={[
-                { required: true, message: "vui long nhap lai password" },
+                { required: true, message: "vui long nhap lai password" },{min:6, message:"toi thieu 6 ky tu"},
                 ({ getFieldValue }) => ({
                     validator(_, value) {
                         if (!value || getFieldValue('password') === value) {
