@@ -62,7 +62,7 @@ const Lap3: React.FC = () => (
             <Input placeholder="nhap tieu de" />
         </Form.Item>
 
-        <Form.Item label="Slug" name="slug">
+        <Form.Item label="Slug" name="slug" rules={[{required:true}]}>
             <Input placeholder="nhap duong dan bai viet" />
         </Form.Item>
 

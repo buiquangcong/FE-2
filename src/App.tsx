@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import Dashboard from "./Page/Dashboard";
 import List from "./Page/List";
 import Lap3 from "./Page/Lap3";
+import AddStory from "./Page/Add";
+import Lap4 from "./Page/Lap4";
 function App() {
   return (
     <>
@@ -27,6 +29,9 @@ function App() {
             </Link>
             <Link to="/form" className="hover:text-gray-200">
               lap3
+            </Link>
+            <Link to="/lap4" className="hover:text-gray-200">
+              lap4
             </Link>
           </div>
 
@@ -54,6 +59,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/form" element={<Lap3 />} />
+          <Route path="/lap4" element={<Lap4 />} />
+          <Route path="/add" element={<AddStory />} />
         </Routes>
       </div>
       <Toaster />

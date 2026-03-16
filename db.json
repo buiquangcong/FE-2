@@ -1,4 +1,53 @@
 {
-  "products": [],
+  "stories": [
+    {
+      "title": "naruto",
+      "author": "kh biet ten",
+      "image": "https://th.bing.com/th/id/OIP.xyMNRpbWtXn_BUr7UgAWnwHaEJ?w=300&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "chua doc",
+      "id": 1
+    },
+    {
+      "title": "7 vien ngoc rong",
+      "author": "kh biet",
+      "image": "https://th.bing.com/th/id/OIP.F4zA6DTZD0151-4U-zUm4QHaEc?w=251&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "chua doc",
+      "id": 2
+    },
+    {
+      "title": "conan",
+      "author": "abc",
+      "image": "https://th.bing.com/th/id/OIP.Npx3cIamoVUUzZsmliDsmQHaEK?w=253&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "nAn",
+      "id": 3
+    }
+  ],
+  "categories": [
+    {
+      "title": "truyen tranh",
+      "description": "truyen tranh",
+      "id": 2
+    },
+    {
+      "title": "truyen xa hoi",
+      "description": "hahah",
+      "id": 3
+    },
+    {
+      "title": "truyen dan gian",
+      "description": "truyen dan gian",
+      "id": 4
+    },
+    {
+      "title": "truyen co tich",
+      "description": "truyen co tich",
+      "id": 5
+    },
+    {
+      "title": "truyen kiem hiep",
+      "description": "truyen kiem hiep",
+      "id": 6
+    }
+  ],
   "users": []
 }
