@@ -1,4 +1,4 @@
-import { Form, Input, Button, Checkbox } from "antd";
+import { Form, Input,Select, Button, Checkbox } from "antd";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import axios from "axios";
@@ -43,6 +43,16 @@ export default function Lap4() {
                 <Form.Item label="Description" name="description" rules={[{required:true, message:"vui long nhap mo ta"}]}>
                     <Input.TextArea rows={4} placeholder="Description" />
                 </Form.Item>
+                <Form.Item label="Category" name="category" rules={[{required:true, message:"vui long chon danh muc"}]}>
+                    <Select
+                        placeholder="Select a category"
+                        style={{ width: 200 }}
+                        options={categories?.map((category: Category) => ({
+                            value: category.id,
+                            label: category.title,
+                        }))}
+                    />
+                </Form.Item>
                 <Form.Item label="Active" name="active">
                     <Checkbox>Active</Checkbox>
                 </Form.Item>
@@ -53,17 +63,7 @@ export default function Lap4() {
                      {isSuccess && <p>Story submitted successfully!</p>}
                 </Form.Item>
             </Form>
-            <hr />
-            <h1>bai4</h1>
-            <table>
-                <select name="category" id="category">
-                    {categories?.map((category: Category) => (
-                        <option key={category.id} value={category.title}>
-                            {category.title}
-                        </option>
-                    ))}
-                </select>
-            </table>
+                
         </div>
         
     )
