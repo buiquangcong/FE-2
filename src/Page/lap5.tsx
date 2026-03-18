@@ -1,6 +1,7 @@
 import { QueryClient, useQuery } from "@tanstack/react-query"
 import axios from "axios"
-import { Table, Image, Button, Popconfirm } from "antd"
+import { Table, Image, Button, Popconfirm, Input } from "antd"
+import { useState } from "react"
 import toast from "react-hot-toast"
 import { useMutation } from "@tanstack/react-query"
 import { useQueryClient } from "@tanstack/react-query"
@@ -11,6 +12,8 @@ interface Category {
 }
 
 export default function Lap5() {
+    const [searchText, setSearchText] = useState("");
+
     const { data, isLoading, isError } = useQuery({
         queryKey: ["stories"],
         queryFn: () => axios.get("http://localhost:3000/stories").then((res) => res.data),
@@ -65,7 +68,7 @@ export default function Lap5() {
                     title="Xóa truyện"
                     description="Bạn có chắc chắn muốn xóa truyện này không?"
                     onConfirm={() => mutate(record.id)}
-                    okText="Đồng ý" 
+                    okText="Đồng ý"
                     cancelText="Hủy"
                 >
                     <Button type="primary" danger>
@@ -76,12 +79,24 @@ export default function Lap5() {
         }
     ]
 
+    const filteredData = data?.filter((item: any) =>
+        item.title.toLowerCase().includes(searchText.toLowerCase())
+    );
+
     if (isError) {
         return <p>Loi call api</p>
     }
     return (
         <div>
-            <Table columns={columns} dataSource={data} loading={isLoading} pagination={{ pageSize: 5 }} />
+            <div style={{ marginBottom: 16 }}>
+                <Input.Search
+                    placeholder="Tìm kiếm truyện theo tên..."
+                    allowClear
+                    onChange={(e) => setSearchText(e.target.value)}
+                    style={{ width: 300 }}
+                />
+            </div>
+            <Table columns={columns} dataSource={filteredData} loading={isLoading} pagination={{ pageSize: 5 }} />
         </div>
     )
 }   
