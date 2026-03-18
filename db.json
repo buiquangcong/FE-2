@@ -5,6 +5,8 @@
       "author": "kh biet ten",
       "image": "https://th.bing.com/th/id/OIP.xyMNRpbWtXn_BUr7UgAWnwHaEJ?w=300&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
       "description": "chua doc",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T14:44:09+07:00",
       "id": 1
     },
     {
@@ -12,6 +14,8 @@
       "author": "kh biet",
       "image": "https://th.bing.com/th/id/OIP.F4zA6DTZD0151-4U-zUm4QHaEc?w=251&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
       "description": "chua doc",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T14:44:09+07:00",
       "id": 2
     },
     {
@@ -19,34 +23,99 @@
       "author": "abc",
       "image": "https://th.bing.com/th/id/OIP.Npx3cIamoVUUzZsmliDsmQHaEK?w=253&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
       "description": "nAn",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T14:44:09+07:00",
       "id": 3
+    },
+    {
+      "title": "One Piece",
+      "author": "Eiichiro Oda",
+      "image": "https://th.bing.com/th?id=OIF.Jh0tgDNEp3nl9cnbIaG5%2fQ&w=122&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Hành trình tìm kiếm kho báu One Piece.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 4
+    },
+    {
+      "title": "Doraemon",
+      "author": "Fujiko F. Fujio",
+      "image": "https://th.bing.com/th/id/OIP.DC6C7OY8FhHPIRQy4boxpwHaD4?w=326&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Chú mèo máy từ tương lai.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 5
+    },
+    {
+      "title": "Bleach",
+      "author": "Tite Kubo",
+      "image": "https://th.bing.com/th/id/OIP.-a1PoIoGT81L0j4n6YRE4QHaHy?w=172&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Cuộc phiêu lưu của một Tử Thần dự bị.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 6
+    },
+    {
+      "title": "Fairy Tail",
+      "author": "Hiro Mashima",
+      "image": "https://th.bing.com/th/id/OIP.KvaObGq-cQrgxal4Sg72KwHaLH?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Hội pháp sư Fairy Tail.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 7
+    },
+    {
+      "title": "Death Note",
+      "author": "Tsugumi Ohba",
+      "image": "https://th.bing.com/th/id/OIP.2noMcf6IsBB-_Sx92Sp1UgHaEK?w=285&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Cuốn sổ tử thần.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 8
+    },
+    {
+      "title": "Attack on Titan",
+      "author": "Hajime Isayama",
+      "image": "https://th.bing.com/th/id/OIP.-MVnzibF7zClWFdl4V1ZygHaHa?w=217&h=217&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Cuộc chiến sinh tồn với Titan.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 9
+    },
+    {
+      "title": "My Hero Academia",
+      "author": "Kohei Horikoshi",
+      "image": "https://th.bing.com/th/id/OIP.v8lXyAp1Qywuhst70k1bKQHaLH?w=204&h=306&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      "description": "Học viện anh hùng.",
+      "category": "Truyện tranh",
+      "createAt": "2026-03-18T15:10:00+07:00",
+      "id": 10
     }
   ],
   "categories": [
     {
-      "title": "truyen tranh",
-      "description": "truyen tranh",
-      "id": 2
+      "id": "2",
+      "title": "Truyện tranh",
+      "description": "Thể loại truyện có hình ảnh minh họa sinh động"
     },
     {
-      "title": "truyen xa hoi",
-      "description": "hahah",
-      "id": 3
+      "id": "3",
+      "title": "Truyện xã hội",
+      "description": "Các câu chuyện phản ánh đời sống thực tế"
     },
     {
-      "title": "truyen dan gian",
-      "description": "truyen dan gian",
-      "id": 4
+      "id": "4",
+      "title": "Truyện dân gian",
+      "description": "Kho tàng truyện cổ từ xa xưa của dân tộc"
     },
     {
-      "title": "truyen co tich",
-      "description": "truyen co tich",
-      "id": 5
+      "id": "5",
+      "title": "Truyện cổ tích",
+      "description": "Những câu chuyện thần tiên, phép thuật dành cho thiếu nhi"
     },
     {
-      "title": "truyen kiem hiep",
-      "description": "truyen kiem hiep",
-      "id": 6
+      "id": "6",
+      "title": "Truyện kiếm hiệp",
+      "description": "Thể loại phiêu lưu, võ thuật kỳ ảo"
     }
   ],
   "users": []

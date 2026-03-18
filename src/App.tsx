@@ -8,6 +8,7 @@ import List from "./Page/List";
 import Lap3 from "./Page/Lap3";
 import AddStory from "./Page/Add";
 import Lap4 from "./Page/Lap4";
+import Lap5 from "./Page/Lap5";
 function App() {
   return (
     <>
@@ -32,6 +33,9 @@ function App() {
             </Link>
             <Link to="/lap4" className="hover:text-gray-200">
               lap4
+            </Link>
+            <Link to="/lap5" className="hover:text-gray-200">
+              lap5
             </Link>
           </div>
 
@@ -60,6 +64,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/form" element={<Lap3 />} />
           <Route path="/lap4" element={<Lap4 />} />
+          <Route path="/lap5" element={<Lap5 />} />
           <Route path="/add" element={<AddStory />} />
         </Routes>
       </div>

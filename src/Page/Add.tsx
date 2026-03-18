@@ -1,7 +1,12 @@
-import { Form, Input, Button } from "antd";
-import { useMutation } from "@tanstack/react-query";
+import { Form, Input, Button, Select } from "antd";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import axios from "axios";
+
+interface Category {
+    id: string;
+    title: string;
+}
 
 export default function AddStory() {
     const {mutate , isSuccess, isPending} = useMutation({
@@ -19,6 +24,13 @@ export default function AddStory() {
         console.log("success", values);
         mutate(values)
     }
+    const {data: categories} = useQuery({
+        queryKey: ["categories"],
+        queryFn: async () => {
+            const response = await axios.get("http://localhost:3000/categories");
+            return response.data;
+        }
+    })
     return (
         <div>
             <h1 className="text-center">Thêm Truyện</h1>
@@ -34,6 +46,19 @@ export default function AddStory() {
                 </Form.Item>
                 <Form.Item label="Description" name="description">
                     <Input placeholder="Description" />
+                </Form.Item>
+                <Form.Item label="createAt" name="createAt">
+                    <Input type="date" placeholder="createAt"  />
+                </Form.Item>
+                <Form.Item label="Category" name="category" rules={[{required:true, message:"vui long chon danh muc"}]}>
+                    <Select
+                        placeholder="Select a category"
+                        style={{ width: 200 }}
+                        options={categories?.map((category: Category) => ({
+                            value: category.id,
+                            label: category.title,
+                        }))}
+                    />
                 </Form.Item>
                 <Form.Item className="flex justify-center">
                     <Button type="primary" htmlType="submit" loading={isPending}>
