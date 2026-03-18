@@ -55,7 +55,7 @@ export default function AddStory() {
                         placeholder="Select a category"
                         style={{ width: 200 }}
                         options={categories?.map((category: Category) => ({
-                            value: category.id,
+                            value: category.title,
                             label: category.title,
                         }))}
                     />
